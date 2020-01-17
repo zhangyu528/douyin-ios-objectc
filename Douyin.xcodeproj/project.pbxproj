@@ -97,6 +97,11 @@
 		3B963800215CA88300B2D6B8 /* CADisplayLink+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9637FF215CA88300B2D6B8 /* CADisplayLink+Tool.m */; };
 		3BF54F8C210F44B9008899F0 /* favorites.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BF54F8B210F44B9008899F0 /* favorites.json */; };
 		3BF54F93210F4D5C008899F0 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BF54F92210F4D5C008899F0 /* user.json */; };
+		458B8D9623D1B1EC0078DA80 /* TinyBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 458B8D9523D1B1EC0078DA80 /* TinyBaseRequest.m */; };
+		458B8D9A23D1B6E70078DA80 /* THVisitorRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 458B8D9923D1B6E70078DA80 /* THVisitorRequest.m */; };
+		458B8D9E23D1BAD10078DA80 /* TinyBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 458B8D9D23D1BAD10078DA80 /* TinyBaseResponse.m */; };
+		458B8DA123D1BC260078DA80 /* TinyHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 458B8DA023D1BC260078DA80 /* TinyHttp.m */; };
+		458B8DA423D1BF690078DA80 /* TinyRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 458B8DA323D1BF690078DA80 /* TinyRequestOperation.m */; };
 		E33BFBBB8F3FAC5885446FD1 /* libPods-Douyin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 788D7E6A99957B05CD68E556 /* libPods-Douyin.a */; };
 /* End PBXBuildFile section */
 
@@ -274,6 +279,17 @@
 		3B98136321A9AC1000F976A0 /* Douyin+prefix+Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Douyin+prefix+Header.pch"; sourceTree = "<group>"; };
 		3BF54F8B210F44B9008899F0 /* favorites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = favorites.json; sourceTree = "<group>"; };
 		3BF54F92210F4D5C008899F0 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		458B8D9323D1B11E0078DA80 /* TinyRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyRequestProtocol.h; sourceTree = "<group>"; };
+		458B8D9423D1B1EC0078DA80 /* TinyBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyBaseRequest.h; sourceTree = "<group>"; };
+		458B8D9523D1B1EC0078DA80 /* TinyBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinyBaseRequest.m; sourceTree = "<group>"; };
+		458B8D9823D1B6E70078DA80 /* THVisitorRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THVisitorRequest.h; sourceTree = "<group>"; };
+		458B8D9923D1B6E70078DA80 /* THVisitorRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THVisitorRequest.m; sourceTree = "<group>"; };
+		458B8D9C23D1BAD10078DA80 /* TinyBaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyBaseResponse.h; sourceTree = "<group>"; };
+		458B8D9D23D1BAD10078DA80 /* TinyBaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinyBaseResponse.m; sourceTree = "<group>"; };
+		458B8D9F23D1BC260078DA80 /* TinyHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyHttp.h; sourceTree = "<group>"; };
+		458B8DA023D1BC260078DA80 /* TinyHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinyHttp.m; sourceTree = "<group>"; };
+		458B8DA223D1BF690078DA80 /* TinyRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyRequestOperation.h; sourceTree = "<group>"; };
+		458B8DA323D1BF690078DA80 /* TinyRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinyRequestOperation.m; sourceTree = "<group>"; };
 		70671669E659B6CCC077AFBD /* Pods-Douyin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douyin/Pods-Douyin.debug.xcconfig"; sourceTree = "<group>"; };
 		788D7E6A99957B05CD68E556 /* libPods-Douyin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Douyin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEEF714730F86EBDB840A5B /* Pods-Douyin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Douyin/Pods-Douyin.release.xcconfig"; sourceTree = "<group>"; };
@@ -341,6 +357,7 @@
 		3B00F22D210EDA0D00E99DE5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				458B8D9223D1B0730078DA80 /* TinyHttp */,
 				3B00F22E210EDA2F00E99DE5 /* HttpRequest */,
 				3B00F22F210EDA3400E99DE5 /* HttpResponse */,
 				3B00F26C210EDE6300E99DE5 /* NetworkHelper.h */,
@@ -609,6 +626,40 @@
 			path = AVPlayer;
 			sourceTree = "<group>";
 		};
+		458B8D9223D1B0730078DA80 /* TinyHttp */ = {
+			isa = PBXGroup;
+			children = (
+				458B8D9B23D1B8110078DA80 /* Response */,
+				458B8D9723D1B5AB0078DA80 /* Request */,
+				458B8D9323D1B11E0078DA80 /* TinyRequestProtocol.h */,
+				458B8D9423D1B1EC0078DA80 /* TinyBaseRequest.h */,
+				458B8D9523D1B1EC0078DA80 /* TinyBaseRequest.m */,
+				458B8D9F23D1BC260078DA80 /* TinyHttp.h */,
+				458B8DA023D1BC260078DA80 /* TinyHttp.m */,
+				458B8DA223D1BF690078DA80 /* TinyRequestOperation.h */,
+				458B8DA323D1BF690078DA80 /* TinyRequestOperation.m */,
+			);
+			path = TinyHttp;
+			sourceTree = "<group>";
+		};
+		458B8D9723D1B5AB0078DA80 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				458B8D9823D1B6E70078DA80 /* THVisitorRequest.h */,
+				458B8D9923D1B6E70078DA80 /* THVisitorRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		458B8D9B23D1B8110078DA80 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				458B8D9C23D1BAD10078DA80 /* TinyBaseResponse.h */,
+				458B8D9D23D1BAD10078DA80 /* TinyBaseResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		76DDCE54F77DAC5BF7635A72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +768,7 @@
 			files = (
 				3B00F28A210EDFD600E99DE5 /* Visitor.m in Sources */,
 				3B193F7D217D85BE00517C93 /* SlideTabBar.m in Sources */,
+				458B8DA123D1BC260078DA80 /* TinyHttp.m in Sources */,
 				3B00F281210EDF8500E99DE5 /* Video.m in Sources */,
 				3B00F28D210EDFEF00E99DE5 /* GroupChat.m in Sources */,
 				3B00F24D210EDBB100E99DE5 /* PostCommentRequest.m in Sources */,
@@ -746,6 +798,7 @@
 				3B00F2C6210EE3EB00E99DE5 /* ChatTextView.m in Sources */,
 				3B00F2B4210EE31500E99DE5 /* EmotionHelper.m in Sources */,
 				3B00F27E210EDF6B00E99DE5 /* Music.m in Sources */,
+				458B8D9E23D1BAD10078DA80 /* TinyBaseResponse.m in Sources */,
 				3B00F256210EDCDD00E99DE5 /* VisitorResponse.m in Sources */,
 				3B00F2DB210EE57D00E99DE5 /* FocusView.m in Sources */,
 				3B963800215CA88300B2D6B8 /* CADisplayLink+Tool.m in Sources */,
@@ -761,6 +814,7 @@
 				3B00F235210EDA9900E99DE5 /* VisitorRequest.m in Sources */,
 				3B00F26B210EDDC500E99DE5 /* CommentListResponse.m in Sources */,
 				3B00F23E210EDAEF00E99DE5 /* PostGroupChatTextRequest.m in Sources */,
+				458B8D9623D1B1EC0078DA80 /* TinyBaseRequest.m in Sources */,
 				3B2A3470210EC775005738DD /* main.m in Sources */,
 				3B00F20D210ED79D00E99DE5 /* WebPImageView.m in Sources */,
 				3B00F2C9210EE40700E99DE5 /* EmotionSelector.m in Sources */,
@@ -774,6 +828,7 @@
 				3B00F2E7210EE5E900E99DE5 /* CommentsPopView.m in Sources */,
 				3B00F27B210EDF5000E99DE5 /* User.m in Sources */,
 				3B00F2B7210EE35A00E99DE5 /* ChatListController.m in Sources */,
+				458B8D9A23D1B6E70078DA80 /* THVisitorRequest.m in Sources */,
 				3B00F2E1210EE5B700E99DE5 /* MusicAlbumView.m in Sources */,
 				3B00F238210EDAB500E99DE5 /* UserRequest.m in Sources */,
 				3B00F213210ED7DA00E99DE5 /* WebPQueueManager.m in Sources */,
@@ -782,6 +837,7 @@
 				3B00F2AA210EE24500E99DE5 /* PhotoView.m in Sources */,
 				3B2A3462210EC773005738DD /* AppDelegate.m in Sources */,
 				3B00F2C3210EE3C900E99DE5 /* TextMessageCell.m in Sources */,
+				458B8DA423D1BF690078DA80 /* TinyRequestOperation.m in Sources */,
 				3B00F210210ED7B900E99DE5 /* WebPImage.m in Sources */,
 				3B00F2BA210EE37400E99DE5 /* TimeCell.m in Sources */,
 				3B00F2CC210EE42600E99DE5 /* PhotoSelector.m in Sources */,
